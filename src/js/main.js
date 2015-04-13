@@ -36,7 +36,7 @@ $(document).ready(function() {
 
 });
 
-var refreshIntervalId = setInterval(function() {
+setInterval(function() {
 
     var active = $('.active-word')
     var lastChild = $('.active-word').is('#animateWord:last-child');
@@ -59,22 +59,3 @@ var refreshIntervalId = setInterval(function() {
     }
 
   }, 3500);
-
-
-/*
-setInterval(function () {
-
-  var active = $('#animateWord')
-
-  if(active.next() && active.next().length) {
-    $('#animateWord').addClass('active-word');
-  }
-  else{
-    active.simblinds(":first")
-  }
-}
-  , 5000);
-
-//============CHANGE WORD========//
-
-*/
