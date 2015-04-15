@@ -11,7 +11,7 @@ var words = [
   {Title: ' Problem-Solver.'}, 
   {Title: ' Baltimorean.'}, 
   {Title: ' Do-It-Yourselfer.'}, 
-  {Title: ' Scotch Drinker.'}, 
+  {Title: ' Golfer.'}, 
   {Title: ' Friend.'}
   ];
 
