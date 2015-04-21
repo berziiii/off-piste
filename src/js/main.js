@@ -64,6 +64,7 @@ setInterval(function() {
 //===============Scroll Top=============//
 
 
+
 $(window).scroll(function() {
   if($(window).scrollTop() == 0){
     $('#scrollTop').fadeOut("fast");
@@ -76,7 +77,12 @@ $(window).scroll(function() {
   }
 });
 
+
+
 //============Easy Scroll=============//
+
+
+
 
 $('a[href*=#]:not([href=#])').click(function() {
  
@@ -102,15 +108,7 @@ $('#next').on('click', function () {
   $('#carousel-example-generic').carousel('next')
 });
 
-$('#next').on('swiperight', function () {
-  $('#carousel-example-generic').carousel('next')
-});
-
 $('#prev').on('click', function () {
-  $('#carousel-example-generic').carousel('prev')
-});
-
-$('#prev').on('swipeleft', function () {
   $('#carousel-example-generic').carousel('prev')
 });
 
