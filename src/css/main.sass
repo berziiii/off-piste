@@ -655,6 +655,8 @@ nav
 		display: inline
 
 		a
+			padding: 10px
+
 			&:hover
 				color: $purple
 				text-decoration: none
@@ -664,14 +666,21 @@ nav
 				-o-transition: color .2s ease-in
 				transition: color color .2s ease-in
 
+	.carousel-title
+		font-weight: 600
+		font-family: Aller-Regular
+		margin: 50px 0px -25px 0px
+		color: $black
+		text-transform: uppercase
+
 	.carousel
 		margin: 0px auto
-		width: 60%
+		width: 50%
 		margin-top: 50px
 		cursor: pointer
 
 		@media (max-width: 992px)
-			width: 80%
+			width: 70%
 
 		@media (max-width: 767px)
 			width: 100%
@@ -694,18 +703,18 @@ nav
 			bottom: 2px
 
 		.carousel-caption
-			font-family: Aller-Display
+			font-family: Aller-regular
+			font-weight: 600
 			text-transform: uppercase
-			font-size: .75em
-			color: $white
-			text-decoration: underline
+			font-size: .9em
+			color: $black
 
 
-			@media (max-width: 992px)
-				bottom: 5%
+		@media (max-width: 992px)
+			bottom: 5%
 
-			@media (max-width: 767px)
-				bottom: 3%
+		@media (max-width: 767px)
+			bottom: 3%
 
 	.view-btn
 		font-size: 1.25em

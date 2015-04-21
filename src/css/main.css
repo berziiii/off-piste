@@ -563,22 +563,30 @@ nav {
   margin-top: -25px;
   font-size: 1.75em;
   display: inline; }
-  .main-container .sample-controls a:hover {
-    color: #D468FF;
-    text-decoration: none;
-    cursor: pointer;
-    -webkit-transition: color 0.2s ease-in;
-    -moz-transition: color 0.2s ease-in;
-    -o-transition: color 0.2s ease-in;
-    transition: color color 0.2s ease-in; }
+  .main-container .sample-controls a {
+    padding: 10px; }
+    .main-container .sample-controls a:hover {
+      color: #D468FF;
+      text-decoration: none;
+      cursor: pointer;
+      -webkit-transition: color 0.2s ease-in;
+      -moz-transition: color 0.2s ease-in;
+      -o-transition: color 0.2s ease-in;
+      transition: color color 0.2s ease-in; }
+.main-container .carousel-title {
+  font-weight: 600;
+  font-family: Aller-Regular;
+  margin: 50px 0px -25px 0px;
+  color: #101010;
+  text-transform: uppercase; }
 .main-container .carousel {
   margin: 0px auto;
-  width: 60%;
+  width: 50%;
   margin-top: 50px;
   cursor: pointer; }
   @media (max-width: 992px) {
     .main-container .carousel {
-      width: 80%; } }
+      width: 70%; } }
   @media (max-width: 767px) {
     .main-container .carousel {
       width: 100%; } }
@@ -597,17 +605,17 @@ nav {
   .main-container .carousel .carousel-indicators {
     bottom: 2px; }
   .main-container .carousel .carousel-caption {
-    font-family: Aller-Display;
+    font-family: Aller-regular;
+    font-weight: 600;
     text-transform: uppercase;
-    font-size: 0.75em;
-    color: #FDFDFD;
-    text-decoration: underline; }
-    @media (max-width: 992px) {
-      .main-container .carousel .carousel-caption {
-        bottom: 5%; } }
-    @media (max-width: 767px) {
-      .main-container .carousel .carousel-caption {
-        bottom: 3%; } }
+    font-size: 0.9em;
+    color: #101010; }
+  @media (max-width: 992px) {
+    .main-container .carousel {
+      bottom: 5%; } }
+  @media (max-width: 767px) {
+    .main-container .carousel {
+      bottom: 3%; } }
 .main-container .view-btn {
   font-size: 1.25em;
   font-family: Aller-light;
