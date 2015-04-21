@@ -1,6 +1,5 @@
 
-
-//======ROTATE WORDS===========//
+//===============ROTATE WORDS================//
 
 
 var html = '';
@@ -59,3 +58,73 @@ setInterval(function() {
     }
 
   }, 3500);
+
+
+
+//===============Scroll Top=============//
+
+
+$(window).scroll(function() {
+  if($(window).scrollTop() == 0){
+    $('#scrollTop').fadeOut("fast");
+    $('#scrollTop').addClass('hide');
+
+  } else {
+    
+    $('#scrollTop').removeClass('hide');
+    $('#scrollTop').fadeIn("fast");
+  }
+});
+
+//============Easy Scroll=============//
+
+$('a[href*=#]:not([href=#])').click(function() {
+ 
+  if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+    var target = $(this.hash);
+    target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+    if (target.length) {
+      $('html,body').animate({
+        scrollTop: target.offset().top - 112
+      }, 1000);
+      return false;
+    }
+  }
+});
+
+
+
+//==============CAROUSEL=============//
+
+
+
+$('#next').on('click', function () {
+  $('#carousel-example-generic').carousel('next')
+});
+
+$('#next').on('swiperight', function () {
+  $('#carousel-example-generic').carousel('next')
+});
+
+$('#prev').on('click', function () {
+  $('#carousel-example-generic').carousel('prev')
+});
+
+$('#prev').on('swipeleft', function () {
+  $('#carousel-example-generic').carousel('prev')
+});
+
+
+
+//=============MODALS==================//
+
+
+
+var openModal = function(e) {
+  $('#modal-sample-' + e.data.index).modal('show');
+};
+ 
+for (var i = 1; i <= 10; i++) {
+  $('#modal-' + i).click({ index: i }, openModal);
+}
+

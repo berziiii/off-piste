@@ -325,7 +325,7 @@ if (typeof jQuery === 'undefined') {
   Carousel.TRANSITION_DURATION = 600
 
   Carousel.DEFAULTS = {
-    interval: 8000,
+    interval: 5000,
     pause: 'hover, click',
     wrap: true,
     keyboard: true

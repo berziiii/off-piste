@@ -85,6 +85,24 @@ a {
 .glyphicons-fire:before {
   content: ""; }
 
+.glyphicons-up-arrow:before {
+  content: ""; }
+
+.glyphicons-left-arrow:before {
+  content: ""; }
+
+.glyphicons-home:before {
+  content: ""; }
+
+.glyphicons-right-arrow:before {
+  content: ""; }
+
+.glyphicons-chevron-left:before {
+  content: ""; }
+
+.glyphicons-chevron-right:before {
+  content: ""; }
+
 .social-facebook:before {
   content: ""; }
 
@@ -156,9 +174,16 @@ nav {
     margin: 0px 10px;
     font-size: 1em;
     line-height: 100px; }
+    @media (max-width: 767px) {
+      nav h5, nav li, nav a {
+        line-height: 35px;
+        margin-bottom: 5px; } }
   nav img {
     width: 100px;
     margin: 15px auto; }
+    @media (max-width: 767px) {
+      nav img {
+        width: 75px; } }
   nav a {
     text-decoration: none;
     cursor: pointer; }
@@ -176,122 +201,486 @@ nav {
       color: #D468FF; }
   nav .active {
     border-top: 2px solid #D468FF; }
+  nav .top {
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    bottom: 2%;
+    right: 2%;
+    font-size: 20pt;
+    color: #00B6F1;
+    margin: 0px;
+    padding: 5px 15px 15px 15px;
+    line-height: 0px; }
+    @media (max-width: 767px) {
+      nav .top {
+        opacity: 0; } }
 
-.home-container {
+.main-container {
   width: 100%;
   background-color: #FDFDFD; }
-  .home-container .hero-container {
+  .main-container .hero-container {
     width: 100%;
     position: relative;
     font-size: 16pt; }
-    .home-container .hero-container img {
+    @media (max-width: 1100px) {
+      .main-container .hero-container {
+        font-size: 12pt; } }
+    @media (max-width: 992px) {
+      .main-container .hero-container {
+        font-size: 10pt; } }
+    @media (max-width: 767px) {
+      .main-container .hero-container {
+        font-size: 8pt; } }
+    @media (max-width: 600px) {
+      .main-container .hero-container {
+        font-size: 6pt; } }
+    .main-container .hero-container img {
       width: 100%; }
       @media (max-width: 600px) {
-        .home-container .hero-container img {
+        .main-container .hero-container img {
           height: 250px; } }
-    .home-container .hero-container .hero-curtain {
+    .main-container .hero-container .hero-curtain {
       width: 100%;
       height: 100%;
       position: absolute;
       top: 0px;
       background-color: rgba(0, 182, 241, 0.65); }
-    .home-container .hero-container .hero-content {
+    .main-container .hero-container .hero-content {
       position: absolute;
       font-family: Aller-Display;
       font-weight: 600;
       font-size: 3em;
       top: 20%; }
-    .home-container .hero-container .rotating-sentence {
+      @media (max-width: 767px) {
+        .main-container .hero-container .hero-content {
+          top: 22.5%; } }
+      @media (max-width: 600px) {
+        .main-container .hero-container .hero-content {
+          top: 25%; } }
+    .main-container .hero-container .rotating-sentence {
       text-align: left;
       text-transform: uppercase;
       padding-left: 30px;
-      line-height: 70px; }
-      .home-container .hero-container .rotating-sentence .rotating-words {
+      line-height: 70px;
+      color: #101010; }
+      @media (max-width: 1100px) {
+        .main-container .hero-container .rotating-sentence {
+          line-height: 60px;
+          padding-left: 25px; } }
+      @media (max-width: 992px) {
+        .main-container .hero-container .rotating-sentence {
+          line-height: 40px;
+          padding-left: 25px; } }
+      @media (max-width: 767px) {
+        .main-container .hero-container .rotating-sentence {
+          line-height: 33px;
+          padding-left: 20px; } }
+      @media (max-width: 600px) {
+        .main-container .hero-container .rotating-sentence {
+          line-height: 30px;
+          padding-left: 15px; } }
+      .main-container .hero-container .rotating-sentence .rotating-words {
         display: inline; }
-      .home-container .hero-container .rotating-sentence .rotating-word {
+      .main-container .hero-container .rotating-sentence .rotating-word {
         position: absolute;
         opacity: 0;
         overflow: hidden;
         color: #101010;
+        border-bottom: 5px solid #D468FF;
         transition: opacity 0.5s ease-in-out;
         -moz-transition: opacity 0.5s ease-in-out;
         -webkit-transition: opacity 0.5s ease-in-out; }
-      .home-container .hero-container .rotating-sentence .active-word {
+        @media (max-width: 992px) {
+          .main-container .hero-container .rotating-sentence .rotating-word {
+            border-bottom: 3px solid #D468FF; } }
+        @media (max-width: 767px) {
+          .main-container .hero-container .rotating-sentence .rotating-word {
+            border-bottom: 2px solid #D468FF; } }
+      .main-container .hero-container .rotating-sentence .active-word {
         opacity: 1;
         position: absolute;
         font-family: Aller-Display;
         font-weight: 600;
+        border-bottom: 5px solid #D468FF;
         transition: opacity 0.5s ease-in-out;
         -moz-transition: opacity 0.5s ease-in-out;
         -webkit-transition: opacity 0.5s ease-in-out; }
-  .home-container .work-container, .home-container .service-container, .home-container .social-container {
+        @media (max-width: 992px) {
+          .main-container .hero-container .rotating-sentence .active-word {
+            border-bottom: 3px solid #D468FF; } }
+        @media (max-width: 767px) {
+          .main-container .hero-container .rotating-sentence .active-word {
+            border-bottom: 2px solid #D468FF; } }
+  .main-container .work-container, .main-container .service-container, .main-container .social-container, .main-container .about-container, .main-container .sample-container {
     width: 100%;
     margin: 50px 0px;
     text-align: center; }
-    .home-container .work-container .work-title, .home-container .work-container .service-title, .home-container .work-container .social-title, .home-container .service-container .work-title, .home-container .service-container .service-title, .home-container .service-container .social-title, .home-container .social-container .work-title, .home-container .social-container .service-title, .home-container .social-container .social-title {
+    @media (max-width: 1100px) {
+      .main-container .work-container, .main-container .service-container, .main-container .social-container, .main-container .about-container, .main-container .sample-container {
+        font-size: 14pt;
+        margin: 45px 0px; } }
+    @media (max-width: 992px) {
+      .main-container .work-container, .main-container .service-container, .main-container .social-container, .main-container .about-container, .main-container .sample-container {
+        font-size: 12pt;
+        margin: 40px 0px; } }
+    @media (max-width: 767px) {
+      .main-container .work-container, .main-container .service-container, .main-container .social-container, .main-container .about-container, .main-container .sample-container {
+        font-size: 18pt;
+        margin: 30px 0px; } }
+    @media (max-width: 600px) {
+      .main-container .work-container, .main-container .service-container, .main-container .social-container, .main-container .about-container, .main-container .sample-container {
+        font-size: 14pt;
+        margin: 25px 0px; } }
+    .main-container .work-container .work-title, .main-container .work-container .service-title, .main-container .work-container .social-title, .main-container .work-container .about-title, .main-container .work-container .sample-title, .main-container .service-container .work-title, .main-container .service-container .service-title, .main-container .service-container .social-title, .main-container .service-container .about-title, .main-container .service-container .sample-title, .main-container .social-container .work-title, .main-container .social-container .service-title, .main-container .social-container .social-title, .main-container .social-container .about-title, .main-container .social-container .sample-title, .main-container .about-container .work-title, .main-container .about-container .service-title, .main-container .about-container .social-title, .main-container .about-container .about-title, .main-container .about-container .sample-title, .main-container .sample-container .work-title, .main-container .sample-container .service-title, .main-container .sample-container .social-title, .main-container .sample-container .about-title, .main-container .sample-container .sample-title {
       border-bottom: 1px solid #00B6F1;
       text-align: center;
       margin-bottom: 100px; }
-    .home-container .work-container .sample-container, .home-container .service-container .sample-container, .home-container .social-container .sample-container {
+      @media (max-width: 1100px) {
+        .main-container .work-container .work-title, .main-container .work-container .service-title, .main-container .work-container .social-title, .main-container .work-container .about-title, .main-container .work-container .sample-title, .main-container .service-container .work-title, .main-container .service-container .service-title, .main-container .service-container .social-title, .main-container .service-container .about-title, .main-container .service-container .sample-title, .main-container .social-container .work-title, .main-container .social-container .service-title, .main-container .social-container .social-title, .main-container .social-container .about-title, .main-container .social-container .sample-title, .main-container .about-container .work-title, .main-container .about-container .service-title, .main-container .about-container .social-title, .main-container .about-container .about-title, .main-container .about-container .sample-title, .main-container .sample-container .work-title, .main-container .sample-container .service-title, .main-container .sample-container .social-title, .main-container .sample-container .about-title, .main-container .sample-container .sample-title {
+          margin-bottom: 90px; } }
+      @media (max-width: 992px) {
+        .main-container .work-container .work-title, .main-container .work-container .service-title, .main-container .work-container .social-title, .main-container .work-container .about-title, .main-container .work-container .sample-title, .main-container .service-container .work-title, .main-container .service-container .service-title, .main-container .service-container .social-title, .main-container .service-container .about-title, .main-container .service-container .sample-title, .main-container .social-container .work-title, .main-container .social-container .service-title, .main-container .social-container .social-title, .main-container .social-container .about-title, .main-container .social-container .sample-title, .main-container .about-container .work-title, .main-container .about-container .service-title, .main-container .about-container .social-title, .main-container .about-container .about-title, .main-container .about-container .sample-title, .main-container .sample-container .work-title, .main-container .sample-container .service-title, .main-container .sample-container .social-title, .main-container .sample-container .about-title, .main-container .sample-container .sample-title {
+          margin-bottom: 80px; } }
+      @media (max-width: 767px) {
+        .main-container .work-container .work-title, .main-container .work-container .service-title, .main-container .work-container .social-title, .main-container .work-container .about-title, .main-container .work-container .sample-title, .main-container .service-container .work-title, .main-container .service-container .service-title, .main-container .service-container .social-title, .main-container .service-container .about-title, .main-container .service-container .sample-title, .main-container .social-container .work-title, .main-container .social-container .service-title, .main-container .social-container .social-title, .main-container .social-container .about-title, .main-container .social-container .sample-title, .main-container .about-container .work-title, .main-container .about-container .service-title, .main-container .about-container .social-title, .main-container .about-container .about-title, .main-container .about-container .sample-title, .main-container .sample-container .work-title, .main-container .sample-container .service-title, .main-container .sample-container .social-title, .main-container .sample-container .about-title, .main-container .sample-container .sample-title {
+          margin-bottom: 50px; } }
+      @media (max-width: 600px) {
+        .main-container .work-container .work-title, .main-container .work-container .service-title, .main-container .work-container .social-title, .main-container .work-container .about-title, .main-container .work-container .sample-title, .main-container .service-container .work-title, .main-container .service-container .service-title, .main-container .service-container .social-title, .main-container .service-container .about-title, .main-container .service-container .sample-title, .main-container .social-container .work-title, .main-container .social-container .service-title, .main-container .social-container .social-title, .main-container .social-container .about-title, .main-container .social-container .sample-title, .main-container .about-container .work-title, .main-container .about-container .service-title, .main-container .about-container .social-title, .main-container .about-container .about-title, .main-container .about-container .sample-title, .main-container .sample-container .work-title, .main-container .sample-container .service-title, .main-container .sample-container .social-title, .main-container .sample-container .about-title, .main-container .sample-container .sample-title {
+          margin-bottom: 40px; } }
+    .main-container .work-container .sample-container, .main-container .service-container .sample-container, .main-container .social-container .sample-container, .main-container .about-container .sample-container, .main-container .sample-container .sample-container {
       position: relative;
       text-align: center;
       margin: 0px auto;
       margin-bottom: 100px; }
-      .home-container .work-container .sample-container .col-lg-4, .home-container .work-container .sample-container .col-md-4, .home-container .work-container .sample-container .col-sm-4, .home-container .service-container .sample-container .col-lg-4, .home-container .service-container .sample-container .col-md-4, .home-container .service-container .sample-container .col-sm-4, .home-container .social-container .sample-container .col-lg-4, .home-container .social-container .sample-container .col-md-4, .home-container .social-container .sample-container .col-sm-4 {
+      @media (max-width: 1100px) {
+        .main-container .work-container .sample-container, .main-container .service-container .sample-container, .main-container .social-container .sample-container, .main-container .about-container .sample-container, .main-container .sample-container .sample-container {
+          margin-bottom: 90px; } }
+      @media (max-width: 992px) {
+        .main-container .work-container .sample-container, .main-container .service-container .sample-container, .main-container .social-container .sample-container, .main-container .about-container .sample-container, .main-container .sample-container .sample-container {
+          margin-bottom: 80px; } }
+      @media (max-width: 767px) {
+        .main-container .work-container .sample-container, .main-container .service-container .sample-container, .main-container .social-container .sample-container, .main-container .about-container .sample-container, .main-container .sample-container .sample-container {
+          margin-bottom: 50px; } }
+      @media (max-width: 600px) {
+        .main-container .work-container .sample-container, .main-container .service-container .sample-container, .main-container .social-container .sample-container, .main-container .about-container .sample-container, .main-container .sample-container .sample-container {
+          margin-bottom: 40px; } }
+      .main-container .work-container .sample-container .col-lg-4, .main-container .work-container .sample-container .col-md-4, .main-container .work-container .sample-container .col-sm-4, .main-container .service-container .sample-container .col-lg-4, .main-container .service-container .sample-container .col-md-4, .main-container .service-container .sample-container .col-sm-4, .main-container .social-container .sample-container .col-lg-4, .main-container .social-container .sample-container .col-md-4, .main-container .social-container .sample-container .col-sm-4, .main-container .about-container .sample-container .col-lg-4, .main-container .about-container .sample-container .col-md-4, .main-container .about-container .sample-container .col-sm-4, .main-container .sample-container .sample-container .col-lg-4, .main-container .sample-container .sample-container .col-md-4, .main-container .sample-container .sample-container .col-sm-4 {
         padding-left: 0px;
         padding-right: 0px; }
-      .home-container .work-container .sample-container img, .home-container .service-container .sample-container img, .home-container .social-container .sample-container img {
+      .main-container .work-container .sample-container img, .main-container .service-container .sample-container img, .main-container .social-container .sample-container img, .main-container .about-container .sample-container img, .main-container .sample-container .sample-container img {
         width: 100%;
         border: 1px solid #00B6F1; }
-      .home-container .work-container .sample-container .sample-caption, .home-container .service-container .sample-container .sample-caption, .home-container .social-container .sample-container .sample-caption {
+      .main-container .work-container .sample-container .sample-caption, .main-container .service-container .sample-container .sample-caption, .main-container .social-container .sample-container .sample-caption, .main-container .about-container .sample-container .sample-caption, .main-container .sample-container .sample-container .sample-caption {
         opacity: 0;
         text-align: center;
         position: absolute;
         background-color: rgba(0, 182, 241, 0.9);
         cursor: pointer;
         padding-left: 15px; }
-        .home-container .work-container .sample-container .sample-caption:hover, .home-container .service-container .sample-container .sample-caption:hover, .home-container .social-container .sample-container .sample-caption:hover {
+        @media (max-width: 992px) {
+          .main-container .work-container .sample-container .sample-caption, .main-container .service-container .sample-container .sample-caption, .main-container .social-container .sample-container .sample-caption, .main-container .about-container .sample-container .sample-caption, .main-container .sample-container .sample-container .sample-caption {
+            top: 80%;
+            opacity: 1; } }
+        @media (max-width: 767px) {
+          .main-container .work-container .sample-container .sample-caption, .main-container .service-container .sample-container .sample-caption, .main-container .social-container .sample-container .sample-caption, .main-container .about-container .sample-container .sample-caption, .main-container .sample-container .sample-container .sample-caption {
+            opacity: 0; } }
+        .main-container .work-container .sample-container .sample-caption:hover, .main-container .service-container .sample-container .sample-caption:hover, .main-container .social-container .sample-container .sample-caption:hover, .main-container .about-container .sample-container .sample-caption:hover, .main-container .sample-container .sample-container .sample-caption:hover {
           opacity: 1;
           -webkit-transition: opacity 0.3s ease-in-out;
           -moz-transition: opacity 0.3s ease-in-out;
           -o-transition: opacity 0.3s ease-in-out;
           transition: opacity 0.3s ease-in-out; }
-        .home-container .work-container .sample-container .sample-caption h5, .home-container .service-container .sample-container .sample-caption h5, .home-container .social-container .sample-container .sample-caption h5 {
+          @media (max-width: 992px) {
+            .main-container .work-container .sample-container .sample-caption:hover, .main-container .service-container .sample-container .sample-caption:hover, .main-container .social-container .sample-container .sample-caption:hover, .main-container .about-container .sample-container .sample-caption:hover, .main-container .sample-container .sample-container .sample-caption:hover {
+              opacity: 1; } }
+          @media (max-width: 767px) {
+            .main-container .work-container .sample-container .sample-caption:hover, .main-container .service-container .sample-container .sample-caption:hover, .main-container .social-container .sample-container .sample-caption:hover, .main-container .about-container .sample-container .sample-caption:hover, .main-container .sample-container .sample-container .sample-caption:hover {
+              opacity: 0; } }
+        .main-container .work-container .sample-container .sample-caption h5, .main-container .service-container .sample-container .sample-caption h5, .main-container .social-container .sample-container .sample-caption h5, .main-container .about-container .sample-container .sample-caption h5, .main-container .sample-container .sample-container .sample-caption h5 {
           padding-top: 45%;
           color: #101010;
-          width: 90%; }
-        .home-container .work-container .sample-container .sample-caption h6, .home-container .service-container .sample-container .sample-caption h6, .home-container .social-container .sample-container .sample-caption h6 {
+          width: 90%;
+          z-index: 1000; }
+          @media (max-width: 1100px) {
+            .main-container .work-container .sample-container .sample-caption h5, .main-container .service-container .sample-container .sample-caption h5, .main-container .social-container .sample-container .sample-caption h5, .main-container .about-container .sample-container .sample-caption h5, .main-container .sample-container .sample-container .sample-caption h5 {
+              padding-top: 40%; } }
+          @media (max-width: 992px) {
+            .main-container .work-container .sample-container .sample-caption h5, .main-container .service-container .sample-container .sample-caption h5, .main-container .social-container .sample-container .sample-caption h5, .main-container .about-container .sample-container .sample-caption h5, .main-container .sample-container .sample-container .sample-caption h5 {
+              position: relative;
+              padding-top: 0px;
+              font-size: 10pt; } }
+          @media (max-width: 767px) {
+            .main-container .work-container .sample-container .sample-caption h5, .main-container .service-container .sample-container .sample-caption h5, .main-container .social-container .sample-container .sample-caption h5, .main-container .about-container .sample-container .sample-caption h5, .main-container .sample-container .sample-container .sample-caption h5 {
+              font-size: 20pt;
+              padding-top: 10px; } }
+          @media (max-width: 600px) {
+            .main-container .work-container .sample-container .sample-caption h5, .main-container .service-container .sample-container .sample-caption h5, .main-container .social-container .sample-container .sample-caption h5, .main-container .about-container .sample-container .sample-caption h5, .main-container .sample-container .sample-container .sample-caption h5 {
+              font-size: 16pt;
+              padding-top: 5px; } }
+          @media (max-width: 450px) {
+            .main-container .work-container .sample-container .sample-caption h5, .main-container .service-container .sample-container .sample-caption h5, .main-container .social-container .sample-container .sample-caption h5, .main-container .about-container .sample-container .sample-caption h5, .main-container .sample-container .sample-container .sample-caption h5 {
+              font-size: 14pt;
+              padding-top: 0px; } }
+        .main-container .work-container .sample-container .sample-caption h6, .main-container .service-container .sample-container .sample-caption h6, .main-container .social-container .sample-container .sample-caption h6, .main-container .about-container .sample-container .sample-caption h6, .main-container .sample-container .sample-container .sample-caption h6 {
           color: #FDFDFD;
-          width: 90%; }
-    .home-container .work-container .service-wrapper, .home-container .service-container .service-wrapper, .home-container .social-container .service-wrapper {
-      margin-bottom: 100px; }
-      .home-container .work-container .service-wrapper .glyphicons, .home-container .service-container .service-wrapper .glyphicons, .home-container .social-container .service-wrapper .glyphicons {
+          width: 90%;
+          z-index: 1000; }
+          @media (max-width: 992px) {
+            .main-container .work-container .sample-container .sample-caption h6, .main-container .service-container .sample-container .sample-caption h6, .main-container .social-container .sample-container .sample-caption h6, .main-container .about-container .sample-container .sample-caption h6, .main-container .sample-container .sample-container .sample-caption h6 {
+              position: relative;
+              padding-top: 0px;
+              font-size: 8pt;
+              margin-top: -5px; } }
+          @media (max-width: 767px) {
+            .main-container .work-container .sample-container .sample-caption h6, .main-container .service-container .sample-container .sample-caption h6, .main-container .social-container .sample-container .sample-caption h6, .main-container .about-container .sample-container .sample-caption h6, .main-container .sample-container .sample-container .sample-caption h6 {
+              font-size: 16pt; } }
+          @media (max-width: 600px) {
+            .main-container .work-container .sample-container .sample-caption h6, .main-container .service-container .sample-container .sample-caption h6, .main-container .social-container .sample-container .sample-caption h6, .main-container .about-container .sample-container .sample-caption h6, .main-container .sample-container .sample-container .sample-caption h6 {
+              font-size: 12pt; } }
+          @media (max-width: 450px) {
+            .main-container .work-container .sample-container .sample-caption h6, .main-container .service-container .sample-container .sample-caption h6, .main-container .social-container .sample-container .sample-caption h6, .main-container .about-container .sample-container .sample-caption h6, .main-container .sample-container .sample-container .sample-caption h6 {
+              font-size: 9pt; } }
+    .main-container .work-container .service-wrapper, .main-container .service-container .service-wrapper, .main-container .social-container .service-wrapper, .main-container .about-container .service-wrapper, .main-container .sample-container .service-wrapper {
+      margin-bottom: 75px; }
+      .main-container .work-container .service-wrapper .glyphicons, .main-container .service-container .service-wrapper .glyphicons, .main-container .social-container .service-wrapper .glyphicons, .main-container .about-container .service-wrapper .glyphicons, .main-container .sample-container .service-wrapper .glyphicons {
         color: #D468FF;
         font-size: 2.5em;
         margin-bottom: 25px; }
-    .home-container .work-container .social-title, .home-container .service-container .social-title, .home-container .social-container .social-title {
+    .main-container .work-container .social-title, .main-container .service-container .social-title, .main-container .social-container .social-title, .main-container .about-container .social-title, .main-container .sample-container .social-title {
       margin-bottom: 50px; }
-    .home-container .work-container a, .home-container .service-container a, .home-container .social-container a {
+    .main-container .work-container a, .main-container .service-container a, .main-container .social-container a, .main-container .about-container a, .main-container .sample-container a {
       color: #101010; }
-      .home-container .work-container a .social, .home-container .service-container a .social, .home-container .social-container a .social {
+      .main-container .work-container a .social, .main-container .service-container a .social, .main-container .social-container a .social, .main-container .about-container a .social, .main-container .sample-container a .social {
         font-color: #101010;
-        font-size: 2.5em;
+        font-size: 2em;
         cursor: pointer;
         padding: 0px 5px; }
-        .home-container .work-container a .social:hover, .home-container .service-container a .social:hover, .home-container .social-container a .social:hover {
+        .main-container .work-container a .social:hover, .main-container .service-container a .social:hover, .main-container .social-container a .social:hover, .main-container .about-container a .social:hover, .main-container .sample-container a .social:hover {
           color: #D468FF;
           -webkit-transition: color 0.2s ease-in;
           -moz-transition: color 0.2s ease-in;
           -o-transition: color 0.2s ease-in;
           transition: color color 0.2s ease-in; }
+  @media (max-width: 767px) {
+    .main-container .work-container {
+      width: 80%;
+      margin-left: 10%; } }
+
+.main-container .about-container {
+  width: 100%;
+  background-color: #FDFDFD;
+  font-size: 16pt; }
+  @media (max-width: 767) {
+    .main-container .about-container {
+      width: 80%;
+      margin-left: 10%; } }
+  .main-container .about-container .about-hero {
+    width: 100%;
+    color: #101010;
+    font-size: 16px;
+    font-family: Aller-Bold;
+    margin: 0px auto;
+    text-align: center;
+    font-weight: 600; }
+    .main-container .about-container .about-hero img {
+      width: 100%;
+      margin-bottom: 50px; }
+      @media (max-width: 767px) {
+        .main-container .about-container .about-hero img {
+          width: 75%; } }
+  .main-container .about-container .about-title {
+    margin-top: 50px;
+    margin-bottom: 50px; }
+    @media (max-width: 767px) {
+      .main-container .about-container .about-title {
+        width: 25%;
+        margin: 0px auto; } }
+  .main-container .about-container p {
+    margin: 20px 0px;
+    font-family: Aller-regular;
+    font-size: 0.9em;
+    text-align: center; }
+    @media (max-width: 767px) {
+      .main-container .about-container p {
+        font-size: 0.65em; } }
+  .main-container .about-container .define {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #00B6F1;
+    margin-bottom: 50px; }
+    .main-container .about-container .define .off-piste {
+      font-family: Aller-Display;
+      font-size: 1.15em;
+      font-weight: 600;
+      text-transform: uppercase;
+      text-decoration: underline; }
+    .main-container .about-container .define .off-piste-sub {
+      font-style: italic;
+      font-family: Aller-Light;
+      font-size: 1em;
+      font-weight: 600; }
+    .main-container .about-container .define .definition {
+      font-size: 0.75em;
+      font-family: Aller-regular;
+      font-weight: 600; }
+  .main-container .about-container span {
+    font-family: Aller-Display;
+    font-size: 0.9em;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: left; }
+
+.main-container .sample-container {
+  font-size: 16pt; }
+  @media (max-width: 767px) {
+    .main-container .sample-container {
+      width: 95%;
+      text-align: center;
+      margin: 0px auto;
+      font-size: 12pt; } }
+  .main-container .sample-container h1 {
+    margin-bottom: 50px; }
+.main-container .sample-content {
+  font-size: 0.8em;
+  font-family: Aller-light;
+  font-weight: 600; }
+  .main-container .sample-content p {
+    margin-bottom: 25px; }
+.main-container .sample-subtitle {
+  margin-top: -75px;
+  margin-bottom: 10px; }
+  @media (max-width: 992px) {
+    .main-container .sample-subtitle {
+      margin-top: -60px; } }
+  @media (max-width: 767px) {
+    .main-container .sample-subtitle {
+      margin-top: -30px; } }
+  .main-container .sample-subtitle h6 {
+    font-family: Aller-Regular;
+    font-weight: 100;
+    font-size: 0.8em; }
+.main-container .sample-controls {
+  margin-top: -25px;
+  font-size: 1.75em;
+  display: inline; }
+  .main-container .sample-controls a:hover {
+    color: #D468FF;
+    text-decoration: none;
+    cursor: pointer;
+    -webkit-transition: color 0.2s ease-in;
+    -moz-transition: color 0.2s ease-in;
+    -o-transition: color 0.2s ease-in;
+    transition: color color 0.2s ease-in; }
+.main-container .carousel {
+  margin: 0px auto;
+  width: 60%;
+  margin-top: 50px;
+  cursor: pointer; }
+  @media (max-width: 992px) {
+    .main-container .carousel {
+      width: 80%; } }
+  @media (max-width: 767px) {
+    .main-container .carousel {
+      width: 100%; } }
+  .main-container .carousel .carousel-control {
+    font-size: 2em;
+    color: #D468FF;
+    opacity: 1; }
+    @media (max-width: 992px) {
+      .main-container .carousel .carousel-control {
+        font-size: 1.75em; } }
+    @media (max-width: 767px) {
+      .main-container .carousel .carousel-control {
+        font-size: 1.75em; } }
+    .main-container .carousel .carousel-control span {
+      margin-top: 250%; }
+  .main-container .carousel .carousel-indicators {
+    bottom: 2px; }
+  .main-container .carousel .carousel-caption {
+    font-family: Aller-Display;
+    text-transform: uppercase;
+    font-size: 0.75em;
+    color: #FDFDFD;
+    text-decoration: underline; }
+    @media (max-width: 992px) {
+      .main-container .carousel .carousel-caption {
+        bottom: 5%; } }
+    @media (max-width: 767px) {
+      .main-container .carousel .carousel-caption {
+        bottom: 3%; } }
+.main-container .view-btn {
+  font-size: 1.25em;
+  font-family: Aller-light;
+  margin-top: 50px; }
+  .main-container .view-btn a {
+    text-decoration: none;
+    color: #00B6F1;
+    padding: 15px 20px;
+    padding: 15px 20px;
+    border: 1px solid #00B6F1; }
+    .main-container .view-btn a:hover {
+      color: #FDFDFD;
+      background-color: #D468FF;
+      border: 1px solid #D468FF;
+      -webkit-transition: color 0.2s ease-in;
+      -moz-transition: color 0.2s ease-in;
+      -o-transition: color 0.2s ease-in;
+      transition: color color 0.2s ease-in;
+      -webkit-transition: background-color 0.2s ease-in;
+      -moz-transition: background-color 0.2s ease-in;
+      -o-transition: background-color 0.2s ease-in;
+      transition: background-color 0.2s ease-in; }
+.main-container .modal {
+  opactiy: 0.9;
+  text-align: center; }
+  .main-container .modal .modal-dialog {
+    width: 80%;
+    margin: 0px auto;
+    margin-top: 5%; }
+    @media (max-width: 992px) {
+      .main-container .modal .modal-dialog {
+        width: 85%;
+        margin-top: 15%; } }
+    @media (max-width: 767px) {
+      .main-container .modal .modal-dialog {
+        width: 90%;
+        margin-top: 25%; } }
+    .main-container .modal .modal-dialog .modal-content {
+      background-color: #FDFDFD; }
+      .main-container .modal .modal-dialog .modal-content .modal-header h4 {
+        font-family: Aller-Display;
+        font-size: 1.25em;
+        font-weight: 600; }
+        @media (max-width: 992px) {
+          .main-container .modal .modal-dialog .modal-content .modal-header h4 {
+            font-size: 1.15em; } }
+        @media (max-width: 767px) {
+          .main-container .modal .modal-dialog .modal-content .modal-header h4 {
+            font-size: 0.9em; } }
+      .main-container .modal .modal-dialog .modal-content .modal-header button {
+        color: #D468FF;
+        opacity: 1;
+        font-size: 1.25em; }
+      .main-container .modal .modal-dialog .modal-content img {
+        width: 100%; }
 
 footer {
   margin-top: 50px;
   margin-bottom: -15px;
-  width: 100%; }
+  width: 100%;
+  font-size: 0.9em; }
   footer .footer-container {
     text-align: center;
     background-color: #00B6F1; }
+    @media (max-width: 1100px) {
+      footer .footer-container {
+        font-size: 0.8em; } }
+    @media (max-width: 992px) {
+      footer .footer-container {
+        font-size: 0.75em; } }
+    @media (max-width: 767px) {
+      footer .footer-container {
+        font-size: 0.7em; } }
     footer .footer-container h6 {
       line-height: 50px;
       margin: 0px; }
