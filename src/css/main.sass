@@ -269,6 +269,9 @@ nav
 		@media (max-width: 600px)
 			font-size: 6pt
 
+		@media (max-width: 500px)
+			font-size: 5pt
+
 		img
 			width: 100%
 
@@ -289,11 +292,18 @@ nav
 			font-size: 3em
 			top: 20%
 
+			@media (min-width: 1500px)
+				font-size: 4em
+				top: 25%
+
 			@media (max-width: 767px)
 				top: 22.5%
 
 			@media (max-width: 600px)
 				top: 25%
+
+			@media (max-width: 500px)
+				top: 28%
 			
 		.rotating-sentence
 			text-align: left
@@ -301,6 +311,9 @@ nav
 			padding-left: 30px
 			line-height: 70px
 			color: $black
+
+			@media (min-width: 1500px)
+				line-height: 80px
 
 			@media (max-width: 1100px)
 				line-height: 60px
@@ -317,6 +330,9 @@ nav
 			@media (max-width: 600px)
 				line-height: 30px
 				padding-left: 15px
+
+			@media (max-width: 500px)
+				line-height: 25px
 			
 			.rotating-words
 				display: inline
@@ -359,6 +375,10 @@ nav
 		margin: 50px 0px
 		text-align: center
 
+		@media (min-width: 1500px)
+			margin: 0px auto
+			width: 80%
+
 		@media (max-width: 1100px)
 			font-size: 14pt
 			margin: 45px 0px
@@ -379,6 +399,9 @@ nav
 			border-bottom: 1px solid $blue
 			text-align: center
 			margin-bottom: 100px
+
+			@media (min-width: 1500px)
+				margin-top: 25px
 
 			@media (max-width: 1100px)
 				margin-bottom: 90px
@@ -554,6 +577,10 @@ nav
 				width: 100%
 				margin-bottom: 50px
 
+				@media (min-width: 1500px)
+					margin-top: 50px
+					width: 70%
+
 				@media (max-width: 767px)
 					width: 75%
 
@@ -685,9 +712,13 @@ nav
 		@media (max-width: 767px)
 			width: 100%
 
+		.carousel-inner
+			border: 1px solid $black
+
 		.carousel-control
 			font-size: 2em
 			color: $purple
+			background-color: rgba(0, 0, 0, 0)
 			opacity: 1
 
 			@media (max-width: 992px)
@@ -749,6 +780,9 @@ nav
 			width: 80%
 			margin: 0px auto
 			margin-top: 5%
+
+			@media (min-width: 1500px)
+				width: 60%
 
 			@media (max-width: 992px)
 				width: 85%

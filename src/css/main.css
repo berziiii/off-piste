@@ -234,6 +234,9 @@ nav {
     @media (max-width: 600px) {
       .main-container .hero-container {
         font-size: 6pt; } }
+    @media (max-width: 500px) {
+      .main-container .hero-container {
+        font-size: 5pt; } }
     .main-container .hero-container img {
       width: 100%; }
       @media (max-width: 600px) {
@@ -251,18 +254,28 @@ nav {
       font-weight: 600;
       font-size: 3em;
       top: 20%; }
+      @media (min-width: 1500px) {
+        .main-container .hero-container .hero-content {
+          font-size: 4em;
+          top: 25%; } }
       @media (max-width: 767px) {
         .main-container .hero-container .hero-content {
           top: 22.5%; } }
       @media (max-width: 600px) {
         .main-container .hero-container .hero-content {
           top: 25%; } }
+      @media (max-width: 500px) {
+        .main-container .hero-container .hero-content {
+          top: 28%; } }
     .main-container .hero-container .rotating-sentence {
       text-align: left;
       text-transform: uppercase;
       padding-left: 30px;
       line-height: 70px;
       color: #101010; }
+      @media (min-width: 1500px) {
+        .main-container .hero-container .rotating-sentence {
+          line-height: 80px; } }
       @media (max-width: 1100px) {
         .main-container .hero-container .rotating-sentence {
           line-height: 60px;
@@ -279,6 +292,9 @@ nav {
         .main-container .hero-container .rotating-sentence {
           line-height: 30px;
           padding-left: 15px; } }
+      @media (max-width: 500px) {
+        .main-container .hero-container .rotating-sentence {
+          line-height: 25px; } }
       .main-container .hero-container .rotating-sentence .rotating-words {
         display: inline; }
       .main-container .hero-container .rotating-sentence .rotating-word {
@@ -315,6 +331,10 @@ nav {
     width: 100%;
     margin: 50px 0px;
     text-align: center; }
+    @media (min-width: 1500px) {
+      .main-container .work-container, .main-container .service-container, .main-container .social-container, .main-container .about-container, .main-container .sample-container {
+        margin: 0px auto;
+        width: 80%; } }
     @media (max-width: 1100px) {
       .main-container .work-container, .main-container .service-container, .main-container .social-container, .main-container .about-container, .main-container .sample-container {
         font-size: 14pt;
@@ -335,6 +355,9 @@ nav {
       border-bottom: 1px solid #00B6F1;
       text-align: center;
       margin-bottom: 100px; }
+      @media (min-width: 1500px) {
+        .main-container .work-container .work-title, .main-container .work-container .service-title, .main-container .work-container .social-title, .main-container .work-container .about-title, .main-container .work-container .sample-title, .main-container .service-container .work-title, .main-container .service-container .service-title, .main-container .service-container .social-title, .main-container .service-container .about-title, .main-container .service-container .sample-title, .main-container .social-container .work-title, .main-container .social-container .service-title, .main-container .social-container .social-title, .main-container .social-container .about-title, .main-container .social-container .sample-title, .main-container .about-container .work-title, .main-container .about-container .service-title, .main-container .about-container .social-title, .main-container .about-container .about-title, .main-container .about-container .sample-title, .main-container .sample-container .work-title, .main-container .sample-container .service-title, .main-container .sample-container .social-title, .main-container .sample-container .about-title, .main-container .sample-container .sample-title {
+          margin-top: 25px; } }
       @media (max-width: 1100px) {
         .main-container .work-container .work-title, .main-container .work-container .service-title, .main-container .work-container .social-title, .main-container .work-container .about-title, .main-container .work-container .sample-title, .main-container .service-container .work-title, .main-container .service-container .service-title, .main-container .service-container .social-title, .main-container .service-container .about-title, .main-container .service-container .sample-title, .main-container .social-container .work-title, .main-container .social-container .service-title, .main-container .social-container .social-title, .main-container .social-container .about-title, .main-container .social-container .sample-title, .main-container .about-container .work-title, .main-container .about-container .service-title, .main-container .about-container .social-title, .main-container .about-container .about-title, .main-container .about-container .sample-title, .main-container .sample-container .work-title, .main-container .sample-container .service-title, .main-container .sample-container .social-title, .main-container .sample-container .about-title, .main-container .sample-container .sample-title {
           margin-bottom: 90px; } }
@@ -485,6 +508,10 @@ nav {
     .main-container .about-container .about-hero img {
       width: 100%;
       margin-bottom: 50px; }
+      @media (min-width: 1500px) {
+        .main-container .about-container .about-hero img {
+          margin-top: 50px;
+          width: 70%; } }
       @media (max-width: 767px) {
         .main-container .about-container .about-hero img {
           width: 75%; } }
@@ -590,9 +617,12 @@ nav {
   @media (max-width: 767px) {
     .main-container .carousel {
       width: 100%; } }
+  .main-container .carousel .carousel-inner {
+    border: 1px solid #101010; }
   .main-container .carousel .carousel-control {
     font-size: 2em;
     color: #D468FF;
+    background-color: transparent;
     opacity: 1; }
     @media (max-width: 992px) {
       .main-container .carousel .carousel-control {
@@ -645,6 +675,9 @@ nav {
     width: 80%;
     margin: 0px auto;
     margin-top: 5%; }
+    @media (min-width: 1500px) {
+      .main-container .modal .modal-dialog {
+        width: 60%; } }
     @media (max-width: 992px) {
       .main-container .modal .modal-dialog {
         width: 85%;
