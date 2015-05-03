@@ -71,7 +71,8 @@ module.exports = function(grunt) {
                         'images/**',
                         '*accounts/**',
                         'js/**',
-                        'css/**'
+                        'css/**',
+                        'Resume.pdf'
                     ],
                     dest: 'dist'
                     }],
