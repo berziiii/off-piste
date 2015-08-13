@@ -4,13 +4,13 @@
 
 var html = '';
 var words = [
-  {Title: ' Web Designer.'}, 
-  {Title: ' Ski Coach.'}, 
-  {Title: ' Longboarder.'}, 
-  {Title: ' Problem-Solver.'}, 
-  {Title: ' Baltimorean.'}, 
-  {Title: ' Do-It-Yourselfer.'}, 
-  {Title: ' Golfer.'}, 
+  {Title: ' Web Designer.'},
+  {Title: ' Ski Coach.'},
+  {Title: ' Longboarder.'},
+  {Title: ' Problem-Solver.'},
+  {Title: ' Baltimorean.'},
+  {Title: ' Do-It-Yourselfer.'},
+  {Title: ' Golfer.'},
   {Title: ' Friend.'}
   ];
 
@@ -39,7 +39,7 @@ setInterval(function() {
 
     var active = $('.active-word')
     var lastChild = $('.active-word').is('#animateWord:last-child');
- 
+
     if (lastChild) {
 
         active.removeClass('active-word');
@@ -71,7 +71,7 @@ $(window).scroll(function() {
     $('#scrollTop').addClass('hide');
 
   } else {
-    
+
     $('#scrollTop').removeClass('hide');
     $('#scrollTop').fadeIn("fast");
   }
@@ -85,7 +85,7 @@ $(window).scroll(function() {
 
 
 $('a[href*=#]:not([href=#])').click(function() {
- 
+
   if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
     var target = $(this.hash);
     target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
@@ -105,11 +105,11 @@ $('a[href*=#]:not([href=#])').click(function() {
 
 
 $('#next').on('click', function () {
-  $('#carousel-example-generic').carousel('next')
+  $('#carousel-example-generic').carousel('next');
 });
 
 $('#prev').on('click', function () {
-  $('#carousel-example-generic').carousel('prev')
+  $('#carousel-example-generic').carousel('prev');
 });
 
 
@@ -121,7 +121,7 @@ $('#prev').on('click', function () {
 var openModal = function(e) {
   $('#modal-sample-' + e.data.index).modal('show');
 };
- 
+
 for (var i = 1; i <= 10; i++) {
   $('#modal-' + i).click({ index: i }, openModal);
 }

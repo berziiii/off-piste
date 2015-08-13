@@ -12,12 +12,8 @@
     "grunt-contrib-watch": "*",
     "grunt-copy": "^0.1.0",
     "grunt-imageoptim": "*",
-    "grunt-notify": "*",
     "grunt-sync": "*",
     "matchdep": "*",
     "node-sass": "*"
-  },
-  "dependencies": {
-    "grunt-sync": "^0.2.1"
   }
 }

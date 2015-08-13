@@ -257,10 +257,13 @@ nav {
       @media (min-width: 1500px) {
         .main-container .hero-container .hero-content {
           font-size: 4em;
-          top: 25%; } }
+          top: 20%; } }
+      @media (max-width: 992px) {
+        .main-container .hero-container .hero-content {
+          top: 27%; } }
       @media (max-width: 767px) {
         .main-container .hero-container .hero-content {
-          top: 22.5%; } }
+          top: 27%; } }
       @media (max-width: 600px) {
         .main-container .hero-container .hero-content {
           top: 25%; } }
@@ -387,7 +390,7 @@ nav {
       @media (max-width: 600px) {
         .main-container .work-container .sample-container, .main-container .service-container .sample-container, .main-container .social-container .sample-container, .main-container .about-container .sample-container, .main-container .sample-container .sample-container {
           margin-bottom: 40px; } }
-      .main-container .work-container .sample-container .col-lg-4, .main-container .work-container .sample-container .col-md-4, .main-container .work-container .sample-container .col-sm-4, .main-container .service-container .sample-container .col-lg-4, .main-container .service-container .sample-container .col-md-4, .main-container .service-container .sample-container .col-sm-4, .main-container .social-container .sample-container .col-lg-4, .main-container .social-container .sample-container .col-md-4, .main-container .social-container .sample-container .col-sm-4, .main-container .about-container .sample-container .col-lg-4, .main-container .about-container .sample-container .col-md-4, .main-container .about-container .sample-container .col-sm-4, .main-container .sample-container .sample-container .col-lg-4, .main-container .sample-container .sample-container .col-md-4, .main-container .sample-container .sample-container .col-sm-4 {
+      .main-container .work-container .sample-container .col-lg-3, .main-container .work-container .sample-container .col-md-3, .main-container .work-container .sample-container .col-sm-6, .main-container .service-container .sample-container .col-lg-3, .main-container .service-container .sample-container .col-md-3, .main-container .service-container .sample-container .col-sm-6, .main-container .social-container .sample-container .col-lg-3, .main-container .social-container .sample-container .col-md-3, .main-container .social-container .sample-container .col-sm-6, .main-container .about-container .sample-container .col-lg-3, .main-container .about-container .sample-container .col-md-3, .main-container .about-container .sample-container .col-sm-6, .main-container .sample-container .sample-container .col-lg-3, .main-container .sample-container .sample-container .col-md-3, .main-container .sample-container .sample-container .col-sm-6 {
         padding-left: 0px;
         padding-right: 0px; }
       .main-container .work-container .sample-container img, .main-container .service-container .sample-container img, .main-container .social-container .sample-container img, .main-container .about-container .sample-container img, .main-container .sample-container .sample-container img {
@@ -400,10 +403,14 @@ nav {
         background-color: rgba(0, 182, 241, 0.9);
         cursor: pointer;
         padding-left: 15px; }
+        .main-container .work-container .sample-container .sample-caption h5, .main-container .service-container .sample-container .sample-caption h5, .main-container .social-container .sample-container .sample-caption h5, .main-container .about-container .sample-container .sample-caption h5, .main-container .sample-container .sample-container .sample-caption h5 {
+          font-size: 1em; }
         @media (max-width: 992px) {
           .main-container .work-container .sample-container .sample-caption, .main-container .service-container .sample-container .sample-caption, .main-container .social-container .sample-container .sample-caption, .main-container .about-container .sample-container .sample-caption, .main-container .sample-container .sample-container .sample-caption {
             top: 80%;
-            opacity: 1; } }
+            opacity: 1; }
+            .main-container .work-container .sample-container .sample-caption h5, .main-container .service-container .sample-container .sample-caption h5, .main-container .social-container .sample-container .sample-caption h5, .main-container .about-container .sample-container .sample-caption h5, .main-container .sample-container .sample-container .sample-caption h5 {
+              font-size: 1.25em; } }
         @media (max-width: 767px) {
           .main-container .work-container .sample-container .sample-caption, .main-container .service-container .sample-container .sample-caption, .main-container .social-container .sample-container .sample-caption, .main-container .about-container .sample-container .sample-caption, .main-container .sample-container .sample-container .sample-caption {
             opacity: 0; } }
@@ -420,7 +427,7 @@ nav {
             .main-container .work-container .sample-container .sample-caption:hover, .main-container .service-container .sample-container .sample-caption:hover, .main-container .social-container .sample-container .sample-caption:hover, .main-container .about-container .sample-container .sample-caption:hover, .main-container .sample-container .sample-container .sample-caption:hover {
               opacity: 0; } }
         .main-container .work-container .sample-container .sample-caption h5, .main-container .service-container .sample-container .sample-caption h5, .main-container .social-container .sample-container .sample-caption h5, .main-container .about-container .sample-container .sample-caption h5, .main-container .sample-container .sample-container .sample-caption h5 {
-          padding-top: 45%;
+          padding-top: 40%;
           color: #101010;
           width: 90%;
           z-index: 1000; }
@@ -431,7 +438,7 @@ nav {
             .main-container .work-container .sample-container .sample-caption h5, .main-container .service-container .sample-container .sample-caption h5, .main-container .social-container .sample-container .sample-caption h5, .main-container .about-container .sample-container .sample-caption h5, .main-container .sample-container .sample-container .sample-caption h5 {
               position: relative;
               padding-top: 0px;
-              font-size: 10pt; } }
+              font-size: 14pt; } }
           @media (max-width: 767px) {
             .main-container .work-container .sample-container .sample-caption h5, .main-container .service-container .sample-container .sample-caption h5, .main-container .social-container .sample-container .sample-caption h5, .main-container .about-container .sample-container .sample-caption h5, .main-container .sample-container .sample-container .sample-caption h5 {
               font-size: 20pt;
@@ -452,7 +459,7 @@ nav {
             .main-container .work-container .sample-container .sample-caption h6, .main-container .service-container .sample-container .sample-caption h6, .main-container .social-container .sample-container .sample-caption h6, .main-container .about-container .sample-container .sample-caption h6, .main-container .sample-container .sample-container .sample-caption h6 {
               position: relative;
               padding-top: 0px;
-              font-size: 8pt;
+              font-size: 10pt;
               margin-top: -5px; } }
           @media (max-width: 767px) {
             .main-container .work-container .sample-container .sample-caption h6, .main-container .service-container .sample-container .sample-caption h6, .main-container .social-container .sample-container .sample-caption h6, .main-container .about-container .sample-container .sample-caption h6, .main-container .sample-container .sample-container .sample-caption h6 {
