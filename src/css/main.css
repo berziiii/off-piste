@@ -474,7 +474,9 @@ nav {
       .main-container .work-container .service-wrapper .glyphicons, .main-container .service-container .service-wrapper .glyphicons, .main-container .social-container .service-wrapper .glyphicons, .main-container .about-container .service-wrapper .glyphicons, .main-container .sample-container .service-wrapper .glyphicons {
         color: #d468ff;
         font-size: 2.5em;
-        margin-bottom: 25px; }
+        margin-bottom: 25px;
+        width: 100px;
+        height: 75px; }
     .main-container .work-container .social-title, .main-container .service-container .social-title, .main-container .social-container .social-title, .main-container .about-container .social-title, .main-container .sample-container .social-title {
       margin-bottom: 50px; }
     .main-container .work-container a, .main-container .service-container a, .main-container .social-container a, .main-container .about-container a, .main-container .sample-container a {
