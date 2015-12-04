@@ -10,8 +10,8 @@ var words = [
   {Title: ' Problem-Solver.'},
   {Title: ' Baltimorean.'},
   {Title: ' Do-It-Yourselfer.'},
-  {Title: ' Golfer.'},
-  {Title: ' Friend.'}
+  {Title: ' Innovator.'},
+  {Title: ' Technologist.'}
   ];
 
 function rotateWord(word) {
