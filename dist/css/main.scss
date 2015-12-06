@@ -432,6 +432,7 @@ nav {
       font-size: 14pt;
       margin: 25px 0px;
     }
+
     .work-title, .service-title, .social-title, .about-title, .sample-title {
       border-bottom: 1px solid $blue;
       text-align: center;
@@ -452,11 +453,12 @@ nav {
         margin-bottom: 40px;
       }
     }
+
     .sample-container {
       position: relative;
       text-align: center;
       margin: 0px auto;
-      margin-bottom: 100px;
+      margin-bottom: 0px;
       @media (max-width: 1100px) {
         margin-bottom: 90px;
       }
@@ -477,6 +479,7 @@ nav {
         width: 100%;
         border: 1px solid $blue;
       }
+
       .sample-caption {
         opacity: 0;
         text-align: center;

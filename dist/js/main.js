@@ -1,6 +1,7 @@
 
 //===============ROTATE WORDS================//
 
+
 var html = '';
 var words = [
   {Title: ' Web Designer.'},
@@ -9,22 +10,24 @@ var words = [
   {Title: ' Problem-Solver.'},
   {Title: ' Baltimorean.'},
   {Title: ' Do-It-Yourselfer.'},
-  {Title: ' Golfer.'},
-  {Title: ' Friend.'},
+  {Title: ' Innovator.'},
+  {Title: ' Technologist.'}
   ];
 
 function rotateWord(word) {
-  var ret = '';
+
+  var ret = ''
 
   ret += '<span id="animateWord" class="rotating-word">' + word.Title + '</span>';
   return ret;
-}
+};
 
-for (var i = 0; i < words.length; i++) {
-  html += rotateWord(words[i]);
-}
+  for (var i = 0; i < words.length; i++) {
+    html += rotateWord(words[i]);
+  }
 
-$('#rotateWord').html(html);
+  $('#rotateWord').html(html);
+
 
 $(document).ready(function() {
   $('#rotateWord span:nth-child(1)').addClass('active-word');
@@ -34,32 +37,36 @@ $(document).ready(function() {
 
 setInterval(function() {
 
-  var active = $('.active-word');
-  var lastChild = $('.active-word').is('#animateWord:last-child');
+    var active = $('.active-word')
+    var lastChild = $('.active-word').is('#animateWord:last-child');
 
-  if (lastChild) {
+    if (lastChild) {
 
-    active.removeClass('active-word');
-    active.addClass('rotating-word');
-    $('#animateWord:first-child').addClass('active-word');
-    $('#animateWord:first-child').removeClass('rotating-word');
-    return true;
+        active.removeClass('active-word');
+        active.addClass('rotating-word');
+        $('#animateWord:first-child').addClass('active-word');
+        $('#animateWord:first-child').removeClass('rotating-word');
+        return true;
 
-  } else {
+    } else {
 
-    active.removeClass('active-word');
-    active.addClass('rotating-word');
-    active.next().removeClass('rotating-word');
-    active.next().addClass('active-word');
-    return true;
-  }
+        active.removeClass('active-word');
+        active.addClass('rotating-word');
+        active.next().removeClass('rotating-word');
+        active.next().addClass('active-word');
+        return true;
+    }
 
-}, 3500);
+  }, 3500);
+
+
 
 //===============Scroll Top=============//
 
+
+
 $(window).scroll(function() {
-  if($(window).scrollTop() === 0){
+  if($(window).scrollTop() == 0){
     $('#scrollTop').fadeOut("fast");
     $('#scrollTop').addClass('hide');
 

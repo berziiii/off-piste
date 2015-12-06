@@ -34,6 +34,18 @@ a {
   a:hover, a:visited {
     text-decoration: none; }
 
+#skill {
+  width: 75%;
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  #skill {
+    width: 25%;
+    padding: 20px 0px;
+  }
+}
+
 .clearfix:before, .clearfix:after {
   content: " ";
   display: table; }
@@ -262,13 +274,16 @@ nav {
           top: 27%; } }
       @media (max-width: 767px) {
         .main-container .hero-container .hero-content {
-          top: 27%; } }
+          top: 27%;
+          font-size: 4em; } }
       @media (max-width: 600px) {
         .main-container .hero-container .hero-content {
-          top: 25%; } }
+          top: 25%;
+          font-size: 4em; } }
       @media (max-width: 500px) {
         .main-container .hero-container .hero-content {
-          top: 28%; } }
+          top: 28%;
+          font-size: 4em;} }
     .main-container .hero-container .rotating-sentence {
       text-align: left;
       text-transform: uppercase;

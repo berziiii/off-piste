@@ -52,6 +52,8 @@ module.exports = function (grunt) {
           'dist/jba.html': 'src/jba.html',
           'dist/Vitamin-T.html': 'src/Vitamin-T.html',
           'dist/curiousalums.html': 'src/curiousalums.html',
+          'dist/tastyr.html': 'src/tastyr.html',
+          'dist/a-guy-and-a-website.html': 'src/a-guy-and-a-website.html',
         },
       },
     },
