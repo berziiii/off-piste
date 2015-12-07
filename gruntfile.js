@@ -73,7 +73,7 @@ module.exports = function (grunt) {
               '*accounts/**',
               'js/**',
               'css/**',
-              'resume.pdf'
+              'Resume.pdf'
             ],
             dest: 'dist'
           }
