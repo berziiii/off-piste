@@ -39,6 +39,12 @@ a {
   text-align: center;
 }
 
+@media (max-width: 992px) {
+  #skill {
+    padding: 10px 0px;
+  }
+}
+
 @media (max-width: 767px) {
   #skill {
     width: 25%;
