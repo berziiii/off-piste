@@ -114,6 +114,9 @@ a {
 .glyphicons-chevron-right:before {
   content: "\e224"; }
 
+.glyphicons-paperclip:before {
+  content: "\e063"; }
+
 .social-facebook:before {
   content: "\E031"; }
 
@@ -717,6 +720,17 @@ nav {
       .main-container .modal .modal-dialog .modal-content img {
         width: 100%; }
 
+#resume {
+  font-size: 2em;
+  padding-top: 100px;
+}
+
+#resume:hover {
+  color: #d468ff;
+  -webkit-transition: color 0.2s ease-in;
+  transition: color 0.2s ease-in;
+
+}
 footer {
   margin-top: 50px;
   margin-bottom: -15px;
